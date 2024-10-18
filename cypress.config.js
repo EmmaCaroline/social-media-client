@@ -1,4 +1,5 @@
-const { defineConfig } = require('cypress');
+/*const { defineConfig } = require('cypress'); Bruke denne eller den under? */
+import { defineConfig } from 'cypress';
 
 module.exports = defineConfig({
   e2e: {
