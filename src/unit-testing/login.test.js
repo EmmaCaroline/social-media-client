@@ -36,13 +36,10 @@ describe('login', () => {
     const email = 'test@example.com';
     const password = 'fake-password';
 
-    // Call the login function with valid credentials
     await login(email, password);
 
-    // Check if the save function was called to store the token
     expect(save).toHaveBeenCalledWith('token', 'fake-token');
 
-    // Check if the profile is saved correctly
     expect(save).toHaveBeenCalledWith('profile', {
       user: 'fake-user',
     });
