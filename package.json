@@ -15,12 +15,16 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.js": [
-      "eslint --fix",
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
       "prettier --write"
     ],
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.scss": [
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "Noroff",
