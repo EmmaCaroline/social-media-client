@@ -84,3 +84,9 @@ Cypress.Commands.add('isLoggedIn', () => {
     expect(win.localStorage.getItem('token')).to.be.a.string;
   });
 });
+
+Cypress.Commands.add('isLoggedOut', () => {
+  cy.window().then((win) => {
+    expect(win.localStorage.getItem('token')).to.be.null;
+  });
+});
