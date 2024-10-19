@@ -8,6 +8,6 @@ module.exports = defineConfig({
     },
   },
   env: {
-    password: 'fake-password', // Define your password globally here
+    password: 'fake-password',
   },
 });
